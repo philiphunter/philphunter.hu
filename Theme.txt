@@ -1,0 +1,6 @@
+Name: Philip Hunter Theme
+Author: Philip Hunter
+Website: https://philiphunter.dotnest.com
+Description: Theme for philiphunter.hu.
+Version: 1.0
+Zones: Header, Navigation, Featured, BeforeMain, AsideFirst, Messages, BeforeContent, Content, AfterContent, AsideSecond, AfterMain, TripelFirst, TripelSecond, TripelThird, FooterQuadFirst, FooterQuadSecond, FooterQuadThird, FooterQuadFourth, Footer
