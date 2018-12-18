@@ -1,0 +1,33 @@
+﻿<article class="entry">
+    <div class="entry-media">
+        <figure>
+            <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
+                <img src="{{ Model.ContentItem.BlogPost.Fields[0].FirstMediaUrl }}"/>
+            </a>
+        </figure>
+        <div class="entry-meta">
+            <span>
+                <i class="fa fa-calendar"></i>
+                {{ Model.ContentItem.CommonPart.PublishedUtc }}
+            </span>
+            <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
+                <i class="fa fa-comments"></i>
+                {{ Model.ContentItem.CommentsPart.CommentsCount }} komment
+            </a>
+            <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
+                <i class="fa fa-user"></i>
+                {{ Model.ContentItem.CommonPart.Owner.UserName }}
+            </a>
+        </div>
+    </div>
+    <h2 class="entry-title">
+        <i class="fa fa-file-image-o"></i>
+        <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">{{ Model.ContentItem.TitlePart.Title }}</a>
+    </h2>
+    <div class="entry-content">
+        {{ Model.ContentItem.BlogPost.Fields[1].Value }}
+        <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
+            Belenézek
+        <i class="fa fa-angle-right"></i></a>
+    </div>
+</article>
