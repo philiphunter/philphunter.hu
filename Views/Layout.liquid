@@ -14,6 +14,9 @@
                             <span class="icon-bar"></span>
                         </span>
                     </button>
+                    <div class="collapse navbar-collapse" id="main-nav-container">
+                        {{ Model.Navigation | Display }}
+                    </div>
                 </div>
             </div>
         </header>
@@ -24,6 +27,17 @@
                 <h1>Philip Hunter</h1>
             </div>
         </div>
+        {% if Model.Messages != null %}
+            <div id="messages" class="site-messages alert-success" role="alert">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-9">
+                            {{ Model.Messages | Display }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {% endif %}
         <div class="container">
             {{ Model.Content | Display }}
         </div>
