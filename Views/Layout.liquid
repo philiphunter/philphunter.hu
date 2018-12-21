@@ -39,7 +39,19 @@
             </div>
         {% endif %}
         <div class="container">
-            {{ Model.Content | Display }}
+            <div class="row">
+                {{ Model.Content | Display }}
+                <aside class="col-md-3 col-md-pull-6 sidebar">
+                    {% if Model.AsideFirst != null %}
+                        {{ Model.AsideFirst | Display }}
+                    {% endif %}
+                </aside>
+                <aside class="col-md-3 sidebar">
+                    {% if Model.AsideSecond != null %}
+                        {{ Model.AsideSecond | Display }}
+                    {% endif %}
+                </aside>
+            </div>
         </div>
     </div>
     <div id="footer-wrapper">
