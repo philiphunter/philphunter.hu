@@ -2,7 +2,7 @@
     <div class="entry-media">
         <figure>
             <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
-                <img src="{{ Model.ContentItem.BlogPost.Fields[0].FirstMediaUrl }}"/>
+                <img src="{{ Model.ContentItem.BlogPost.Cover.FirstMediaUrl }}"/>
             </a>
         </figure>
         <div class="entry-meta">
@@ -25,7 +25,7 @@
         <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">{{ Model.ContentItem.TitlePart.Title }}</a>
     </h2>
     <div class="entry-content">
-        {{ Model.ContentItem.BlogPost.Fields[1].Value }}
+        {{ Model.ContentItem.BlogPost.Introduction.Value }}
         <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
             Belenézek
         <i class="fa fa-angle-right"></i></a>

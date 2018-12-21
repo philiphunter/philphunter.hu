@@ -1,50 +1,50 @@
 ﻿{% AddPageClassNames, "single" %}
-<article class="entry">
-    <div class="entry-media">
-        <figure>
-            <img src="{{ Model.ContentItem.BlogPost.Fields[0].FirstMediaUrl }}" />
-        </figure>
-    </div>
-    <h2 class="entry-title">{{ Model.ContentItem.TitlePart.Title }}</h2>
-    <div class="entry-meta">
-        <span>
-            <i class="fa fa-calendar"></i>
-            {{ Model.ContentItem.CommonPart.PublishedUtc }}
-        </span>
-        <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
-            <i class="fa fa-comments"></i>
-            {{ Model.ContentItem.CommentsPart.CommentsCount }} komment
-        </a>
-        <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
-            <i class="fa fa-user"></i>
-            {{ Model.ContentItem.CommonPart.Owner.UserName }}
-        </a>
-    </div>
-    <div class="entry-content">
-        {{ Model.ContentItem.BlogPostPart.Text }}
-    </div>
-    <div class="entry-author">
-        <!--<figure>
-            <img src="" alt="Szerző" class="img-responsive" />
-        </figure>-->
-        <div class="author-content">
-            <h4>Philip Hunter</h4>
-            <!--<p>Bemutatkozó szöveg</p>-->
-            <div class="social-icons">
-                <a href="https://www.facebook.com/Philip-Hunter-154982041887121/" target="_blank" class="social-icon" title="Facebook">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <!--<a href="#" class="social-icon" title="Twitter">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a href="#" class="social-icon" title="Instagram">
-                    <i class="fa fa-instagram"></i>
-                </a>-->
+<div class="row">
+    <div class="col-md-9">
+        <article class="entry">
+            <div class="entry-media">
+                <figure>
+                    <img src="{{ Model.ContentItem.BlogPost.Fields[0].FirstMediaUrl }}" />
+                </figure>
             </div>
-        </div>
+            <h2 class="entry-title">{{ Model.ContentItem.TitlePart.Title }}</h2>
+            <div class="entry-meta">
+                <span>
+                    <i class="fa fa-calendar"></i>
+                    {{ Model.ContentItem.CommonPart.PublishedUtc }}
+                </span>
+                <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
+                    <i class="fa fa-comments"></i>
+                    {{ Model.ContentItem.CommentsPart.CommentsCount }} komment
+                </a>
+                <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
+                    <i class="fa fa-user"></i>
+                    {{ Model.ContentItem.CommonPart.Owner.UserName }}
+                </a>
+            </div>
+            <div class="entry-content">
+                {{ Model.ContentItem.BlogPostPart.Text }}
+            </div>
+            <div class="entry-author">
+                <!--<figure>
+                    <img src="" alt="Szerző" class="img-responsive" />
+                </figure>-->
+                <div class="author-content">
+                    <h4>Philip Hunter</h4>
+                    <!--<p>Bemutatkozó szöveg</p>-->
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/Philip-Hunter-154982041887121/" target="_blank" class="social-icon" title="Facebook">
+                            <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="https://twitter.com/PhilipH24297712" target="_blank" class="social-icon" title="Twitter">
+                            <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="https://www.instagram.com/philwillhunt/" target="_blank" class="social-icon" title="Instagram">
+                            <i class="fa fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </article>
     </div>
-</article>
-
-<!--{{ Model.Content.Items[5] | Display }}
-{{ Model.Content.Items[5].List | Display }}
-{{ Model.Content.Items[6] | Display }}-->
+</div>
