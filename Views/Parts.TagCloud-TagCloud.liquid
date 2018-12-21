@@ -1,0 +1,8 @@
+﻿<div class="widget">
+    <h3 class="widget-title">Turkáló</h3>
+    <div class="tagcloud">
+        {% for tag in Model.ContentPart.TagCounts %}
+            <a href="/Tags/{{ tag.TagName }}">{{ tag.TagName }}</a>
+        {% endfor %}
+    </div>
+</div>
