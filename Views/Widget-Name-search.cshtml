@@ -1,4 +1,10 @@
-﻿<form action="/Search">    
+﻿@using Orchard.ContentManagement
+
+@{
+    var userCanRegister = WorkContext.CurrentSite.As<Orchard.Users.Models.RegistrationSettingsPart>().UsersCanRegister;
+}
+
+<form action="/Search">    
     <fieldset>
         <input id="q" name="q" type="text" value="" class="form-control" placeholder="Keresés" />
         <button type="submit" class="btn btn-link" aria-hidden="true">
@@ -6,3 +12,6 @@
         </button>
     </fieldset>
 </form>
+
+@T("Please enter your username and password.") 
+    @if(userCanRegister) { @Html.ActionLink(T("Register").Text, "Register", new { ReturnUrl = Request.QueryString["ReturnUrl"] }) @T(" if you don't have an account.") }
