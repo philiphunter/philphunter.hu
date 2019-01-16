@@ -3,8 +3,11 @@
     font-size: 1.1em;
 }
 
-/* Display the search results using flex.  */
-.search-results {
+/* Display the search results and the tagged posts using flex  */
+.search-results, .tagged-posts {
     display: flex;
-    justify-content: space-between;
+
+    li {
+        padding: 10px;
+    }
 }
