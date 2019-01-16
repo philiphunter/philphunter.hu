@@ -1,5 +1,5 @@
 ﻿{% Display Resources %}
-
+{% Display FacebookPagePlugin %}
 <div id="wrapper">
     <div class="sticky-wrapper">
         <header class="header sticky-header">
@@ -27,30 +27,35 @@
                 <h1>Philip Hunter</h1>
             </div>
         </div>
+
         {% if Model.Messages != null %}
-            <div id="messages" class="site-messages alert-success" role="alert">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-9">
-                            {{ Model.Messages | Display }}
-                        </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9">
+                        {% Display MessageResources %}
+                        {{ Model.Messages | Display }}
                     </div>
                 </div>
             </div>
         {% endif %}
+
         <div class="container">
             <div class="row">
-                {{ Model.Content | Display }}
-                <aside class="col-md-3 col-md-pull-6 sidebar">
-                    {% if Model.AsideFirst != null %}
+                {% if Model.Content != null %}
+                    {{ Model.Content | Display }}
+                {% endif %}
+
+                {% if Model.AsideFirst != null %}
+                    <div class="col-md-3 col-md-pull-6 sidebar">
                         {{ Model.AsideFirst | Display }}
-                    {% endif %}
-                </aside>
-                <aside class="col-md-3 sidebar">
-                    {% if Model.AsideSecond != null %}
+                    </div>
+                {% endif %}
+                
+                {% if Model.AsideSecond != null %}
+                    <aside class="col-md-3 sidebar">
                         {{ Model.AsideSecond | Display }}
-                    {% endif %}
-                </aside>
+                    </aside>
+                {% endif %}
             </div>
         </div>
     </div>

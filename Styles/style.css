@@ -7865,3 +7865,7 @@ label.error {
     color: #999; }
     .dark .soon-section .form-control::placeholder {
       color: #999; }
+
+/*--------Custom styling-------*/
+.entry-content {
+  font-size: 1.1em; }
