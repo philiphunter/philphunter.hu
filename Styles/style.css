@@ -7867,5 +7867,11 @@ label.error {
       color: #999; }
 
 /*--------Custom styling-------*/
+/* Set the font-size for the blog posts. */
 .entry-content {
   font-size: 1.1em; }
+
+/* Display the search results using flex  */
+.search-results {
+  display: flex;
+  justify-content: space-between; }
