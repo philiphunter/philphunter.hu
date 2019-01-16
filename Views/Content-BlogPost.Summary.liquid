@@ -1,16 +1,16 @@
 ﻿<article class="entry">
     <div class="entry-media">
         <figure>
-            <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
+            <a href="{{ Site.BaseUrl }}/{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
                 <img class="img-responsive" src="{{ Model.ContentItem.BlogPost.Cover.FirstMediaUrl }}"/>
             </a>
         </figure>
         <div class="entry-meta">
-            <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
+            <a href="{{ Site.BaseUrl }}/{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
                 <i class="fa fa-calendar"></i>
                 {{ Model.ContentItem.CommonPart.PublishedUtc }}
             </a>
-            <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
+            <a href="{{ Site.BaseUrl }}/{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
                 <i class="fa fa-user"></i>
                 {{ Model.ContentItem.CommonPart.Owner.UserName }}
             </a>
@@ -18,11 +18,11 @@
     </div>
     <h2 class="entry-title">
         <i class="fa fa-file-image-o"></i>
-        <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">{{ Model.ContentItem.TitlePart.Title }}</a>
+        <a href="{{ Site.BaseUrl }}/{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">{{ Model.ContentItem.TitlePart.Title }}</a>
     </h2>
     <div class="entry-content">
         {{ Model.ContentItem.BlogPost.Introduction.Value }}
-        <a href="{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
+        <a href="{{ Site.BaseUrl }}/{{ Model.ContentItem.AutoroutePart.DisplayAlias }}">
             Belenézek
         <i class="fa fa-angle-right"></i></a>
     </div>
