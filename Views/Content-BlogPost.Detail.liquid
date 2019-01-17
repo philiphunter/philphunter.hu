@@ -16,7 +16,7 @@
                 <span>
                     <i class="fa fa-user"></i>
                     {{ Model.ContentItem.CommonPart.Owner.UserName }}
-                </a>
+                </span>
             </div>
             <div class="entry-content">
                 {{ Model.ContentItem.BlogPostPart.Text }}
@@ -42,5 +42,7 @@
                 </div>
             </div>
         </article>
+
+        <div class="fb-comments" data-href="{{ Site.BaseUrl }}/{{ Model.ContentItem.AutoroutePart.DisplayAlias }}" data-numposts="5"></div>
     </div>
 </div>
