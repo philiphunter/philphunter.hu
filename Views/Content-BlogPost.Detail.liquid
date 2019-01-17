@@ -22,13 +22,16 @@
                 {{ Model.ContentItem.BlogPostPart.Text }}
             </div>
             <div class="entry-author">
-                <!--<figure>
-                    <img src="" alt="Szerző" class="img-responsive" />
-                </figure>-->
+                <figure>
+                    <img src="https://dotneststatic.com/media/philiphunter/Avatar/Avatar90x90.png" alt="Szerző" class="img-responsive" />
+                </figure>
                 <div class="author-content">
                     <h4>Philip Hunter</h4>
-                    <!--<p>Bemutatkozó szöveg</p>-->
+                    <p>A kis Philipet az általános iskolában egy pedofil, fallosszal nem rendelkező személy megerőszakolta, akinek a társadalmi kora 14 év volt, így a bíróság felmentette őt. Philben ekkor tudatosult, hogy a #metoo-tól igenis erősebb az ageizmus.</p>
+<p>Phil társadalmi nemét nőnek mondva a kapott plusz pontokkal bekerült az egyetemre, ahol megtanulta a televízió képernyőjén keresztül történő gerincműtétek végrehajtását. Csak sajnos már nincsenek páciensek.</p>
+<p>Így Philip Hunter új szándéka a társadalomra, aktualitásokra való szatirikus reflektálás blogposztok formájában (egyelőre).</p>
                     <div class="social-icons">
+                        <label>Szósöl:</label>
                         <a href="https://www.facebook.com/Philip-Hunter-154982041887121/" target="_blank" class="social-icon" title="Facebook">
                             <i class="fa fa-facebook"></i>
                         </a>
@@ -43,6 +46,11 @@
             </div>
         </article>
 
-        <div class="fb-comments" data-href="{{ Site.BaseUrl }}/{{ Model.ContentItem.AutoroutePart.DisplayAlias }}" data-numposts="5"></div>
+        <div class="comments">
+            <h3 class="title mb25">
+                <span>Kommentek</span>
+            </h3>
+            <div class="fb-comments" data-href="{{ Model.WorkContext.HttpContext.Request.Url.AbsoluteUri }}/{{ Model.ContentItem.AutoroutePart.DisplayAlias }}" data-numposts="5"></div>
+        </div>
     </div>
 </div>
