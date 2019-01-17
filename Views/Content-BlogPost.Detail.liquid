@@ -21,6 +21,9 @@
             <div class="entry-content">
                 {{ Model.ContentItem.BlogPostPart.Text }}
             </div>
+
+            <div class="fb-like entry" data-href="{{ Model.WorkContext.HttpContext.Request.Url.AbsoluteUri }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
             <div class="entry-author">
                 <figure>
                     <img src="https://dotneststatic.com/media/philiphunter/Avatar/Avatar90x90.png" alt="Szerző" class="img-responsive" />
@@ -50,7 +53,7 @@
             <h3 class="title mb25">
                 <span>Kommentek</span>
             </h3>
-            <div class="fb-comments" data-href="{{ Model.WorkContext.HttpContext.Request.Url.AbsoluteUri }}/{{ Model.ContentItem.AutoroutePart.DisplayAlias }}" data-numposts="5"></div>
+            <div class="fb-comments" data-href="{{ Model.WorkContext.HttpContext.Request.Url.AbsoluteUri }}" data-numposts="5"></div>
         </div>
     </div>
 </div>
